@@ -1,4 +1,228 @@
+/* style sheet for egypt.html */
+@import url('https://fonts.googleapis.com/css2?family=Moderustic:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Staatliches&display=swap');
+
+/* font style changes */
 body {
-    font-family: "Helvetica", "Arial", sans-serif;
-    line-height: 1.5;
-  }
+  font-weight: 300;
+  font-family: 'Moderustic', 'Helvetica Neue', 'Arial', sans-serif ;
+  line-height: 1.2;
+  font-size: 18px;
+  color: rgb(138, 36, 36);
+}
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: 400;
+  font-family: 'Staatliches', 'Helvetica Neue', 'Arial', sans-serif ;
+}
+
+nav h2 {
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    padding-right: 0;
+}
+
+ul {
+    margin: 0;
+}
+
+ul li {
+  padding-top: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+main ul {
+  padding-top: 0;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+h1,
+h2,
+p {
+  margin: 0;
+  padding: 20px;
+}
+
+h3,
+h4 {
+  margin: 0;
+  padding: 10px;
+  padding-left: 20px;
+}
+
+figcaption {
+  font-size: 16px;
+}
+
+
+/* background color changes */
+header,
+footer {
+  background-color: rgba(248, 242, 227, 0.4);
+  border-radius: 15px;
+  border: 2px solid rgba(192, 186, 170, 0.8);
+}
+
+nav {
+  background-color: rgba(248, 242, 227, 0.6);
+  height: 170px;
+  position: sticky;
+  top: 0;
+  border: 2px solid rgb(138, 36, 36);
+  border-radius: 15px;
+}
+
+section {
+  background-color: rgba(248, 242, 227, 0.9);
+  border-radius: 15px;
+  border: 2px solid rgba(192, 186, 170, 0.8);
+}
+
+th,
+td {
+  padding-top: 0;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+}
+
+
+
+
+
+/* link color changes */
+a,
+a:link {
+  color: rgb(138, 36, 36);
+}
+
+a:visited {
+  color: #272525;    
+}
+
+a:hover {
+  color:rgb(247, 80, 80);
+}
+
+a:active {
+  color:#721d53;
+}
+
+
+/* box model */
+#box {
+  max-width: 960px;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+
+#area {
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(192, 186, 170, 0.4);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+  margin-left: 200px;
+  margin-right: 200px;
+  place-items: center;
+  border-radius: 15px;
+  text-align: center;
+}
+
+
+#land-boundaries {
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(192, 186, 170, 0.4);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+  place-items: center;
+  border-radius: 15px;
+  text-align: center;
+}
+
+#land-boundaries tbody {
+    min-width: 300px;
+}
+
+tbody  td {
+    width: 300px;
+}
+
+#population {
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(192, 186, 170, 0.4);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    margin-left: 190px;
+    margin-right: 190px;
+    place-items: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#religion {
+    margin: 0;
+    padding: 15px;
+    background-color: rgba(192, 186, 170, 0.4);
+    display: grid;
+    grid-template-columns: 1fr;
+    margin: 20px;
+    margin-left: 160px;
+    margin-right: 160px;
+    place-items: center;
+    border-radius: 15px;
+    text-align: center;
+}
+
+#religion td {
+    width: 200px;
+}
+
+#religion th {
+    width: 190px;
+}
+
+/* css grid */
+body {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-gap: 20px;
+  grid-template-areas:
+     "masthead    masthead"
+     "navigation  welcome"
+     "copyright   copyright";
+}
+
+header {
+  grid-area: masthead;
+}
+  
+nav {
+  grid-area: navigation;
+}
+  
+main {
+  grid-area: welcome;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 20px;
+}
+  
+footer {
+  grid-area: copyright;
+}
