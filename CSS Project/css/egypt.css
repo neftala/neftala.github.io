@@ -19,29 +19,6 @@ h4 {
   font-family: 'Staatliches', 'Helvetica Neue', 'Arial', sans-serif ;
 }
 
-nav h2 {
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 10px;
-    padding-right: 0;
-}
-
-ul {
-    margin: 0;
-}
-
-ul li {
-  padding-top: 5px;
-  font-size: 16px;
-  line-height: 1.4;
-}
-
-main ul {
-  padding-top: 0;
-  padding-left: 40px;
-  padding-bottom: 20px;
-}
-
 h1,
 h2,
 p {
@@ -56,9 +33,44 @@ h4 {
   padding-left: 20px;
 }
 
+
+nav h2 {
+  padding-left: 20px;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-right: 0;
+}
+
+ul {
+  margin: 0;
+}
+
+ul li {
+  padding-top: 5px;
+  font-size: 16px;
+  line-height: 1.4;
+}
+
+main ul {
+  padding-top: 0;
+  padding-left: 40px;
+  padding-bottom: 20px;
+}
+
+
 figcaption {
   font-size: 16px;
 }
+
+th,
+td {
+  padding-top: 0;
+  padding: 10px;
+  padding-left: 15px;
+  padding-right: 15px;
+  font-size: 16px;
+}
+
 
 
 /* background color changes */
@@ -84,14 +96,6 @@ section {
   border: 2px solid rgba(192, 186, 170, 0.8);
 }
 
-th,
-td {
-  padding-top: 0;
-  padding: 10px;
-  padding-left: 15px;
-  padding-right: 15px;
-  font-size: 16px;
-}
 
 
 
@@ -124,7 +128,7 @@ a:active {
 }
 
 
-#area {
+/* #area {
   margin: 0;
   padding: 15px;
   background-color: rgba(192, 186, 170, 0.4);
@@ -136,6 +140,7 @@ a:active {
   place-items: center;
   border-radius: 15px;
   text-align: center;
+  max-width: 960px;
 }
 
 
@@ -162,31 +167,31 @@ tbody  td {
 }
 
 #population {
-    margin: 0;
-    padding: 15px;
-    background-color: rgba(192, 186, 170, 0.4);
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 20px;
-    margin-left: 190px;
-    margin-right: 190px;
-    place-items: center;
-    border-radius: 15px;
-    text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(192, 186, 170, 0.4);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+  margin-left: 190px;
+  margin-right: 190px;
+  place-items: center;
+  border-radius: 15px;
+  text-align: center;
 }
 
 #religion {
-    margin: 0;
-    padding: 15px;
-    background-color: rgba(192, 186, 170, 0.4);
-    display: grid;
-    grid-template-columns: 1fr;
-    margin: 20px;
-    margin-left: 160px;
-    margin-right: 160px;
-    place-items: center;
-    border-radius: 15px;
-    text-align: center;
+  margin: 0;
+  padding: 15px;
+  background-color: rgba(192, 186, 170, 0.4);
+  display: grid;
+  grid-template-columns: 1fr;
+  margin: 20px;
+  margin-left: 160px;
+  margin-right: 160px;
+  place-items: center;
+  border-radius: 15px;
+  text-align: center;
 }
 
 #religion td {
@@ -195,18 +200,19 @@ tbody  td {
 
 #religion th {
     width: 190px;
-}
+} */
 
 /* css grid */
 body {
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 1fr 2fr 2fr;
   grid-gap: 20px;
-  grid-template-areas:
-     "masthead    masthead"
-     "navigation  welcome"
-     "copyright   copyright";
+  grid-template-areas: 
+    "masthead    masthead    masthead"
+    "navigation  welcome      welcome"
+    "copyright  copyright  copyright";
 }
+
 
 header {
   grid-area: masthead;
@@ -221,6 +227,22 @@ main {
   display: grid;
   grid-template-columns: 1fr;
   grid-gap: 20px;
+  grid-template-areas:
+    "introduction"
+    "geography"
+    "people";
+}
+
+#introduction{
+  grid-area: introduction;
+}
+
+#geography{
+  grid-area: geography;
+}
+
+#people-and-society{
+  grid-area: people;
 }
   
 footer {
