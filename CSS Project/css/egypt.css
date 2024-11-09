@@ -128,7 +128,7 @@ a:active {
 }
 
 
-/* #area {
+#area {
   margin: 0;
   padding: 15px;
   background-color: rgba(192, 186, 170, 0.4);
@@ -200,7 +200,7 @@ tbody  td {
 
 #religion th {
     width: 190px;
-} */
+}
 
 /* css grid */
 body {
