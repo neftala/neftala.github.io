@@ -1,0 +1,79 @@
+/* style sheet for index.html */
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+Mono+One&display=swap');
+
+/* font style changes */
+body {
+  font-weight: 400;
+  font-family: 'Lato','Helvetica Neue', 'Arial', sans-serif ;
+  font-size: 16px;
+}
+
+h1 {
+  font-weight: 600;
+  font-family: 'Rubik Mono One', 'Helvetica Neue', 'Arial', sans-serif ;
+  font-size: 30px;
+  margin: 0;
+}
+
+h2,
+h3 {
+  font-weight: 600;
+  font-family: 'Rubik Mono One', 'Helvetica Neue', 'Arial', sans-serif ;
+  font-size: 20px;
+  margin: 0;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+ul{
+    list-style: none;
+}
+
+/* color changes */
+#introduction,
+header,
+nav {
+  background-color: rgba(232, 232, 232, 0.6);
+}
+
+
+
+/* making image circular */
+#introduction img {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+}
+
+/* box model */
+#box {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.text {
+  padding: 30px;
+}
+
+/* css grid */
+body {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#introduction {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-items: center;
+}
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    place-items: center;
+}
+
