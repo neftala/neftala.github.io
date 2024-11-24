@@ -7,6 +7,14 @@ body {
   font-weight: 400;
   font-family: 'Lato','Helvetica Neue', 'Arial', sans-serif ;
   font-size: 16px;
+  line-height: 1.4;
+}
+
+figcaption {
+  font-weight: 400;
+  font-family: 'Lato','Helvetica Neue', 'Arial', sans-serif ;
+  font-size: 10px;
+  line-height: 1.4;
 }
 
 h1 {
@@ -16,18 +24,21 @@ h1 {
   margin: 0;
 }
 
-h2,
+h2 {
+  font-weight: 600;
+  font-family: 'Rubik Mono One', 'Helvetica Neue', 'Arial', sans-serif ;
+  font-size: 25px;
+  margin: 0;
+}
+
 h3 {
   font-weight: 600;
   font-family: 'Rubik Mono One', 'Helvetica Neue', 'Arial', sans-serif ;
-  font-size: 20px;
+  font-size: 16px;
   margin: 0;
 }
 
 h4 {
-  font-weight: 600;
-  font-family: 'Rubik Mono One', 'Helvetica Neue', 'Arial', sans-serif ;
-  font-size: 14px;
   margin: 0;
 }
 
@@ -36,29 +47,58 @@ body {
   margin: 0;
 }
 
-ul {
+nav ul {
   list-style: none;
 }
 
+.text ul {
+  padding: 10px;
+}
+
 a {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 /* color changes */
+
+body,
+h1,
+h2,
+h3 {
+  color: #371111
+}
+
 #introduction,
 header,
 nav {
-  background-color: rgba(232, 232, 232, 0.6);
+  background-color: rgba(247, 247, 247, 0.6);
+}
+
+/* link color changes */
+a,
+a:link {
+  color: #272525;
+}
+
+a:visited {
+  color: #371111;    
+}
+
+a:hover {
+  color:rgb(247, 80, 80);
+}
+
+a:active {
+  color:#b6b6b6;
 }
 
 
-
-/* making image circular */
-#introduction img {
-  width: 200px;
-  height: 200px;
-  border-radius: 50%;
+/* making headshot image changes */
+#introduction figure {
+  margin: 0;
 }
+
+
 
 /* box model */
 #box {
@@ -68,6 +108,7 @@ nav {
 
 .text {
   padding: 30px;
+  padding-left: 60px;
 }
 
 /* css grid */
@@ -82,10 +123,11 @@ body {
   place-items: center;
 }
 
-ul {
+nav ul {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   place-items: center;
+  padding: 0px;
 }
 
 .navigation {
@@ -94,10 +136,12 @@ ul {
 }
 
 .navigation header {
-    padding-left: 30px;
-    padding-top: 20px;
+  padding-left: 60px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
 .navigation nav {
-    place-content: center;
+  place-content: center;
 }
+
