@@ -81,13 +81,9 @@ figure  {
 
 
 
-/* image size changes*/
+/* image size changes -- had to size in css to keep image resolution*/
 
 .mvmnt img {
-  max-width: 700px;
-}
-
-.bass img {
   max-width: 700px;
 }
 
@@ -99,6 +95,23 @@ figure  {
   max-height: 333px;
 }
 
+.mvmnt-site-plan img {
+  max-width: 500px;
+}
+
+.mvmnt-floor-plan img {
+  max-width: 500px;
+}
+
+.mvmnt-gym img {
+  max-width: 500px;
+  margin-top: 50px;
+}
+
+
+.bass img {
+  max-width: 700px;
+}
 
 .bass-exterior img {
   max-width: 500px;
@@ -115,6 +128,8 @@ figure  {
 .gnomon-exterior img {
   max-width: 500px;
 }
+
+
 
 /* color changes */
 body,
