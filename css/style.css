@@ -81,55 +81,6 @@ figure  {
 
 
 
-/* image size changes -- had to size in css to keep image resolution*/
-
-.mvmnt img {
-  max-width: 700px;
-}
-
-.mvmnt-exterior img {
-  max-width: 500px;
-}
-
-.mvmnt-interior img {
-  max-height: 333px;
-}
-
-.mvmnt-site-plan img {
-  max-width: 500px;
-}
-
-.mvmnt-floor-plan img {
-  max-width: 500px;
-}
-
-.mvmnt-gym img {
-  max-width: 500px;
-  margin-top: 50px;
-}
-
-
-.bass img {
-  max-width: 700px;
-}
-
-.bass-exterior img {
-  max-width: 500px;
-}
-
-.bass-exterior-close img {
-  max-height: 333px;
-}
-
-.gnomon-interior img {
-  max-height: 333px;
-}
-
-.gnomon-exterior img {
-  max-width: 500px;
-}
-
-
 
 /* color changes */
 body,
@@ -146,7 +97,7 @@ nav {
 }
 
 .text ul {
-  border: 2px solid rgb(140, 140, 140);
+  border: 2px solid rgb(247, 80, 80);
   border-radius: 15px;
 }
 
@@ -200,6 +151,7 @@ main {
   display: grid;
   grid-template-columns: 1fr 1fr;
   place-items: center;
+  margin: 0;
 }
 
 nav ul {
@@ -234,6 +186,7 @@ nav ul {
 
 #gallery {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 480px 480px;
+  max-width: 960px;
   grid-gap: 10px;
 }
